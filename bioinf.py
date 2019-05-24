@@ -1,3 +1,9 @@
+'''
+This program gets sequences of nucleotides for every chain of molecule.
+Please enter the PDB-code.
+'''
+
+
 from sys import argv
 import urllib.request
 
