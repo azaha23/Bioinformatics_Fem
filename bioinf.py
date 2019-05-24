@@ -27,7 +27,7 @@ for elem in read:
     if elem[21] == "T":
         f = 1
         na.append(elem)
-    elif elem[21] == "A" or elem[21] == "C" or elem[21] == "G":
+    elif elem[21] == "A" or elem[21] == "C" or elem[21] == "G" or elem[21] == "U":
         na.append(elem)
 
 lst_na = []
@@ -47,3 +47,5 @@ for p in lst_na:
         if el[23] == p:
             file_fasta.write(el[21])
     file_fasta.write("\n")
+
+file_fasta.close()
