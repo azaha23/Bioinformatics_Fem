@@ -7,6 +7,13 @@ Please enter the PDB-code.
 from sys import argv
 import urllib.request
 
+try:
+    url_file = urllib.request.urlopen("https://files.rcsb.org/download/" + argv[1] + ".pdb")
+except Exception:
+    print("Code does not exist")
+    exit(0)
+
+
 url_file = urllib.request.urlopen("https://files.rcsb.org/download/" + argv[1] + ".pdb")
 lines = url_file.readlines()
 read = []

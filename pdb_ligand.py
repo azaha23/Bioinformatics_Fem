@@ -26,8 +26,7 @@ url_file = None
 try:
     url_file = urllib.request.urlopen(ref)
 except Exception:
-    print
-    "Code does not exist"
+    print("Code does not exist")
     exit(0)
 
 result = ""
